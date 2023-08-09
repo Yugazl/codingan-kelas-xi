@@ -1,0 +1,267 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #01420f;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 600px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 600px;
+            /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #01420f;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Float Tata Letak CSS</h2>
+    <p>Dalam contoh ini, kami telah membuat header, dua kolom/kotak, dan footer. Pada layar yang lebih kecil, kolom akan
+        bertumpuk satu sama lain.</p>
+    <p>Ubah ukuran jendela browser untuk melihat efek responsif (Anda akan mempelajari lebih lanjut tentang ini di bab
+        berikutnya - Responsif HTML.)</p>
+
+    <header>
+        <h2>Bekasi</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Sabana Deltamas</a></li>
+                <li><a href="#">Transera Waterpark</a></li>
+                <li><a href="#">Pantai Muara Gembong</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Bekasi</h1>
+            <p><br><img src="image/transerawp.jpg" width="500px" height="" alt=""><br><br>
+                <b>Kota Bekasi</b> merupakan salah satu kota yang terdapat di Provinsi Jawa Barat, Indonesia. Nama Bekasi
+                berasal dari kata Bagasasi yang artinya sama dengan Candrabaga yang tertulis di dalam Prasasti Tugu era
+                Kerajaan Tarumanegara, yaitu nama sungai yang melewati kota ini. Pada tahun 2021, jumlah penduduk kota
+                Bekasi berjumlah 2.464.719 jiwa.<br><br>
+
+                Kota ini merupakan bagian dari metropolitan Jakarta Raya dan menjadi Kota satelit dengan jumlah penduduk
+                terbanyak se-Indonesia. Saat ini Kota Bekasi berkembang menjadi tempat tinggal kaum urban dan sentra
+                industri.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Container for flexboxes */
+        section {
+            display: -webkit-flex;
+            display: flex;
+        }
+
+        /* Style the navigation menu */
+        nav {
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* Style the content */
+        article {
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+            section {
+                -webkit-flex-direction: column;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>CSS Layout Flexbox</h2>
+    <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will
+        stack on top of each other.</p>
+    <p>Resize the browser window to see the responsive effect.</p>
+    <p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 and earlier versions.</p>
+
+    <header>
+        <h2>Bekasi</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Sabana Deltamas</a></li>
+                <li><a href="#">Transera Waterpark</a></li>
+                <li><a href="#">Pantai Muara Gembong</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Bekasi <br><img src="image/transerawp.jpg" alt="" width="300px" height="200px"></h1>
+            <p><b>Kota Bekasi</b> merupakan salah satu kota yang terdapat di provinsi Jawa Barat, Indonesia. Kota ini
+                berada
+                dalam anggota yang terkait megapolitan Jabodetabek dan dijadikan kota akbar ke empat di Indonesia. Masa
+                ini Kota Bekasi berkembang dijadikan tempat tinggal kaum urban dan sentra industri.<br>
+
+            <h1 style="font-size: 30px; font-style: initial;">Daftar inti</h1>
+            <ul>
+                <li>1 Geografi</li><br>
+                <li>2 Sejarah</li><br>
+                <li>3 Kependudukan</li><br>
+                <li>4 Perekonomian</li><br>
+                <li>5 Infrastruktur</li><br>
+                <li>6 Layanan Publik</li><br>
+                <li>6.1 Pusat Perbelanjaan</li><br>
+                <li>6.2 Tempat Ibadah</li><br>
+                <li>6.3 Media Online</li><br>
+                <li>7 Seni Tipu daya budi</li><br>
+                <li>8 Rujukan</li><br>
+                <li>9 Lihat Pula</li><br>
+            </ul><br>
+            <h1 style="font-size: 30px; font-style: initial;">Geografi</h1>
+            Secara geografis Kota Bekasi berada pada ketinggian 19 m di atas permukaan laut. Kota ini terletak di
+            sebelah timur Jakarta; berbatasan dengan Jakarta Timur di barat, Kabupaten Bekasi di utara dan timur,
+            Kabupaten Bogor di selatan, serta Kota Depok di sebelah barat daya.
+
+            Dari total lapang wilayahnya, lebih dari 50% sudah dijadikan daerah efektif perkotaan dengan 90% daerah
+            perumahan, 4% daerah industri, 3% daerah perdagangan, dan sisanya untuk kontruksi yang lain.<br>
+
+            <h1 style="font-size: 30px; font-style: initial;">Sejarah</h1>
+            Bekasi tempo dulu merupakan ibu kota Kerajaan Tarumanegara dengan sebutan Dayeuh Sundasembawa atau
+            Jayagiri. Di kota inilah asal Maharaja Tarusbawa, pendiri Kerajaan Sunda menurunkan raja-raja Sunda
+            hingga generasi ke-40 yaitu Ratu Ragumulya, penguasa Pajajaran yang terakhir.<br>
+
+            Pada masa kolonial Hindia-Belanda, Bekasi merupakan salah satu kewedanaan di dalam Kabupaten Meester
+            Cornelis, dan termasuk ke dalam wilayah Batavia En Omelanden. Pada tahun 1950, Kabupaten Meester
+            Cornelis (Jatinegara) berubah nama dijadikan Kabupaten Bekasi. Dan Kota Bekasi merupakan sebuah
+            kecamatan dari Kabupaten Bekasi yang akhir berkembang dan ditingkatkan statusnya pada tahun 1982
+            dijadikan kota administratif Bekasi. Kota Bekasi masa itu terdiri atas empat kecamatan yaitu kecamatan
+            Bekasi Timur, Bekasi Selatan, Bekasi Barat, dan Bekasi Utara, serta mencakup 18 kelurahan dan 8 desa.
+            Pada tahun 1996 kota administratif Bekasi kembali ditingkatkan statusnya dijadikan kotamadya (sekarang
+            "kota").</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+</body>
+
+</html>

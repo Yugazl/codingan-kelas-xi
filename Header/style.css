@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    padding: 15px;
+    display: flex; 
+    align-items: center;
+}
+
+nav img {
+    width: 38px;
+    height: auto;
+}
+
+.gam img {
+    width: 100px;
+    height: 50px;
+}
+
+nav ul {
+    margin-left: 50px;
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav:nth-child(1) ul li a {
+    margin-right: 20px;
+    color: #000;
+    text-decoration: none;
+    padding: 16px;
+}
+
+nav:nth-child(1) ul li a:hover, button:hover {
+    background-color: #04AA6D!important;
+}
+
+nav ul li .content a {
+    display: block;
+    padding: 15px;
+    /* background-color: aliceblue; */
+    margin: 1px;
+    color: #fff;
+}
+
+nav ul li .content a:hover {
+    background-color: #EEE0C9;
+}
+
+nav ul li .content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 130px;
+    top: 55px;
+    background-color: #282a35;
+    color: #fff !important;
+    /* right: 260px; */
+}
+
+nav ul li:hover .content {
+    display: block;
+}
+
+nav ul li a button {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #000;
+    background-color: inherit;
+}
+
+nav:nth-child(2){
+    padding: 0;
+    background-color: #282a35;
+}
+
+nav:nth-child(2) ul li{
+    padding: 9px;
+}
+
+nav:nth-child(2) ul li a {
+    padding: 0 10px;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+nav:nth-child(2) ul li a img {
+    width: 15px;
+}
+
+nav:nth-child(2) ul li:hover {
+    background-color: #000;
+}
+
+nav:nth-child(2) ul {
+    margin-left: 0;
+}
+
+section {
+    display: flex;
+}
+
+.navbar {
+    background-color: #e7e9eb;
+    width: 25%;
+    padding: 10px;
+    
+}
+
+
+.navbar p a,h1 a {
+    text-decoration: none;
+    color: #000;
+}
+
+article {
+    padding: 50px;
+}
+
+.head-intro {
+    /* padding: 50px; */
+}
+
+button {
+    padding-top: 5px;
+    background-color: #04aa6d;
+    color: #ffffff;    
+}
+
+.previous{
+    margin-left: 5px;
+}
+
+article .head-intro .btn .next {
+    margin-left: 600px;
+}
+
+.what-is h4 {
+    padding-top: 50px;
+}
+
+.simpel {
+    padding-top: 50px;
+}
+
+.Explain {
+    padding-top: 50px;
+}
+
+.What-si-an {
+    padding-top: 50px;
+}
+
+ul li {
+    margin-left: 30px;
+}
+
+.Browsers {
+    padding-top: 50px;
+}
+
+.Structure {
+    padding-top: 50px;
+}
+
+.History {
+    padding-top: 50px;
+}
+
+.butfot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-satu {
+    width: 100%;
+    margin: 20px 0;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+.table-satu tr td,
+.table-satu tr th {
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.table-dua {
+    width: 100%;
+    margin: 20px 0;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+
+.tabel-dua tr td,
+.tabel-dua tr th {
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}
+
+
+
+
